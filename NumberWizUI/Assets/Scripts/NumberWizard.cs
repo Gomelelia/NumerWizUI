@@ -8,7 +8,7 @@ public class NumberWizard : MonoBehaviour
 
    [SerializeField] int max;
    [SerializeField] int min;
-    [SerializeField] TextMeshProUGUI guessText;
+   [SerializeField] TextMeshProUGUI guessText;
    int guess;
 
 
@@ -44,6 +44,6 @@ public class NumberWizard : MonoBehaviour
     {
 
         guess = (max + min) / 2;
-
+        guessText.text = guess.ToString();
     }
 }
